@@ -1,0 +1,174 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+:root {
+  --bg-color-pink: #680c25;
+  --color-white: aliceblue;
+  --color-dark: rgb(28, 23, 23);
+}
+
+.dark-mode {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+nav {
+  h1 {
+    margin-left: 2rem;
+  }
+  button {
+    border: none;
+    background: none;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.favorite-items-container {
+  background: var(--bg-color-pink);
+  color: var(--color-dark);
+  padding: 2rem;
+  .favorite-items {
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    gap: 2rem;
+  }
+  .card {
+    width: 12rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  h1 {
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+  }
+  .favorite-items {
+    img {
+      cursor: pointer;
+    }
+    justify-content: center;
+
+    .btn-close {
+      right: 1rem;
+      top: 0.5rem;
+    }
+  }
+}
+
+.random-items-container {
+  padding: 2rem;
+  .card {
+    width: 18rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  img {
+    cursor: pointer;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .card-body {
+    color: var(--color-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    button {
+      border: none;
+      background: none;
+      color: rgb(176, 176, 176);
+      font-size: 1.5rem;
+    }
+    .love {
+      color: rgb(245, 124, 18);
+    }
+  }
+}
+.meal-info-container {
+  padding: 1rem;
+  .meal-making-info {
+    width: 60vw;
+    margin: auto;
+    position: relative;
+    .btn-bottom {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+    .meal-making-header {
+      padding: 1rem;
+      justify-content: space-between;
+    }
+    .meal-info-body {
+      width: 100%;
+      background: rgb(255, 255, 255);
+      z-index: 1;
+      padding: 2rem;
+
+      .meal-img {
+        width: 50%;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  position: relative;
+  .meal-info-container {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.show {
+  visibility: visible;
+}
+.hide {
+  display: none;
+}
+
+@media (width<576px) {
+  .favorite-items-container {
+    padding: 1rem;
+    .favorite-items {
+      .card {
+        margin-top: 1rem;
+        padding: 0;
+        width: 5rem;
+        .btn-close {
+          font-size: 0.7rem;
+          right: 0;
+          top: -1rem;
+          // background: var(--color-white);
+        }
+        .card-body {
+          width: 100%;
+          padding: 5px;
+          h5 {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .meal-info-container {
+    h2 {
+      font-size: 1.2rem;
+    }
+    .meal-making-info {
+      width: 90vw;
+      .meal-info-body {
+        margin: auto;
+        padding: 0.5rem;
+
+        .meal-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
