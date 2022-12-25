@@ -24,7 +24,8 @@ async function mealSearch(mealName) {
   const res = await fetch(url);
   const resData = await res.json();
   const meals = await resData.meals;
-
+  
+  searchItemContainer.innerHTML='';
   searchCon.innerHTML = ""; //search container reset
   const h1 = document.createElement("h1");
   h1.className = "text-center";
