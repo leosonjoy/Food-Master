@@ -1,3 +1,14 @@
+@keyframes append-animate {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
 .favorite-items-container {
   background: var(--bg-color-pink);
   color: var(--color-dark);
@@ -20,6 +31,8 @@
   }
 
   .card {
+    transform-origin: 50% 0;
+    animation: append-animate 0.3s linear;
     width: 12rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }

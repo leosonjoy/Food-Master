@@ -266,6 +266,7 @@ function mealInfo(meals) {
 // set local Storage
 function addMealLS(id) {
   const getMealsId = getMealsIdFromLS();
+
   const idMeal = JSON.stringify([...getMealsId, id]);
 
   localStorage.setItem("mealId", idMeal);
