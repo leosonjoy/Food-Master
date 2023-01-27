@@ -10,18 +10,7 @@
   color: var(--color-white);
 }
 
-nav {
-  h1 {
-    margin-left: 2rem;
-  }
-  button {
-    border: none;
-    background: none;
-    margin-right: 2rem;
-    font-size: 1.5rem;
-  }
-}
-
+@import "./nav/nav.scss";
 .favorite-items-container {
   background: var(--bg-color-pink);
   color: var(--color-dark);
