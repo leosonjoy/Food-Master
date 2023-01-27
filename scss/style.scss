@@ -11,66 +11,9 @@
 }
 
 @import "./nav/nav.scss";
-.favorite-items-container {
-  background: var(--bg-color-pink);
-  color: var(--color-dark);
-  padding: 2rem;
-  .favorite-items {
-    display: flex;
-    justify-content: center;
-    // flex-direction: column;
-    gap: 2rem;
-  }
-  .card {
-    width: 12rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  h1 {
-    color: var(--color-white);
-    margin-bottom: 1.5rem;
-  }
-  .favorite-items {
-    img {
-      cursor: pointer;
-    }
-    justify-content: center;
+@import "./favorite-items-container/fav-item-container.scss";
+@import "./random-container/random.scss";
 
-    .btn-close {
-      right: 1rem;
-      top: 0.5rem;
-    }
-  }
-}
-
-.random-items-container {
-  padding: 2rem;
-  .card {
-    width: 18rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  img {
-    cursor: pointer;
-  }
-  h1 {
-    margin-bottom: 2rem;
-  }
-  .card-body {
-    color: var(--color-dark);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    button {
-      border: none;
-      background: none;
-      color: rgb(176, 176, 176);
-      font-size: 1.5rem;
-    }
-    .love {
-      color: rgb(245, 124, 18);
-    }
-  }
-}
 .meal-info-container {
   padding: 1rem;
   .meal-making-info {
