@@ -1,0 +1,42 @@
+@media (width<576px) {
+  .favorite-items-container {
+    padding: 1rem;
+    .favorite-items {
+      .card {
+        margin-top: 1rem;
+        padding: 0;
+        width: 5rem;
+        .btn-close {
+          font-size: 0.7rem;
+          right: 0;
+          top: -1rem;
+          // background: var(--color-white);
+        }
+        .card-body {
+          width: 100%;
+          padding: 5px;
+          h5 {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+
+  .meal-info-container {
+    h2 {
+      font-size: 1.2rem;
+    }
+    .meal-making-info {
+      width: 90vw;
+      .meal-info-body {
+        margin: auto;
+        padding: 0.5rem;
+
+        .meal-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

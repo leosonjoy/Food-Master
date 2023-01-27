@@ -13,39 +13,7 @@
 @import "./nav/nav.scss";
 @import "./favorite-items-container/fav-item-container.scss";
 @import "./random-container/random.scss";
-
-.meal-info-container {
-  padding: 1rem;
-  .meal-making-info {
-    width: 60vw;
-    margin: auto;
-    position: relative;
-    .btn-bottom {
-      position: absolute;
-      bottom: 1rem;
-      right: 1rem;
-    }
-    .meal-making-header {
-      padding: 1rem;
-      justify-content: space-between;
-    }
-    .meal-info-body {
-      width: 100%;
-      background: rgb(255, 255, 255);
-      z-index: 1;
-      padding: 2rem;
-
-      .meal-img {
-        width: 50%;
-
-        img {
-          object-fit: cover;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
+@import "./meal-info-container/meal-info.scss";
 
 .main {
   position: relative;
@@ -61,46 +29,4 @@
 .hide {
   display: none;
 }
-
-@media (width<576px) {
-  .favorite-items-container {
-    padding: 1rem;
-    .favorite-items {
-      .card {
-        margin-top: 1rem;
-        padding: 0;
-        width: 5rem;
-        .btn-close {
-          font-size: 0.7rem;
-          right: 0;
-          top: -1rem;
-          // background: var(--color-white);
-        }
-        .card-body {
-          width: 100%;
-          padding: 5px;
-          h5 {
-            font-size: 0.7rem;
-          }
-        }
-      }
-    }
-  }
-
-  .meal-info-container {
-    h2 {
-      font-size: 1.2rem;
-    }
-    .meal-making-info {
-      width: 90vw;
-      .meal-info-body {
-        margin: auto;
-        padding: 0.5rem;
-
-        .meal-img {
-          width: 100%;
-        }
-      }
-    }
-  }
-}
+@import "./media-Query/media-Query.scss";

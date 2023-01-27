@@ -1,0 +1,32 @@
+.meal-info-container {
+  padding: 1rem;
+  .meal-making-info {
+    width: 60vw;
+    margin: auto;
+    position: relative;
+    .btn-bottom {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+    }
+    .meal-making-header {
+      padding: 1rem;
+      justify-content: space-between;
+    }
+    .meal-info-body {
+      width: 100%;
+      background: rgb(255, 255, 255);
+      z-index: 1;
+      padding: 2rem;
+
+      .meal-img {
+        width: 50%;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
