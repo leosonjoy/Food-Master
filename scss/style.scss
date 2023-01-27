@@ -9,24 +9,9 @@
   background: var(--color-dark);
   color: var(--color-white);
 }
-
+@import "./main/main.scss";
 @import "./nav/nav.scss";
 @import "./favorite-items-container/fav-item-container.scss";
 @import "./random-container/random.scss";
 @import "./meal-info-container/meal-info.scss";
-
-.main {
-  position: relative;
-  .meal-info-container {
-    position: absolute;
-    top: 0;
-  }
-}
-
-.show {
-  visibility: visible;
-}
-.hide {
-  display: none;
-}
 @import "./media-Query/media-Query.scss";

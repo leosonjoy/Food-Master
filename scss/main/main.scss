@@ -1,0 +1,14 @@
+.main {
+  position: relative;
+  .meal-info-container {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.show {
+  visibility: visible;
+}
+.hide {
+  display: none;
+}
