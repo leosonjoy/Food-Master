@@ -2,21 +2,12 @@
   background: var(--bg-color-pink);
   color: var(--color-dark);
   padding: 2rem;
+
   .favorite-items {
     display: flex;
     justify-content: center;
     // flex-direction: column;
     gap: 2rem;
-  }
-  .card {
-    width: 12rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  h1 {
-    color: var(--color-white);
-    margin-bottom: 1.5rem;
-  }
-  .favorite-items {
     img {
       cursor: pointer;
     }
@@ -26,5 +17,14 @@
       right: 1rem;
       top: 0.5rem;
     }
+  }
+
+  .card {
+    width: 12rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  h1 {
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
   }
 }
